@@ -1,0 +1,7 @@
+FROM tensorflow/tensorflow
+Copy requirements.txt .
+
+#create dir
+RUN mkdir -p /app/fcn
+
+COPY . /app/fcn
